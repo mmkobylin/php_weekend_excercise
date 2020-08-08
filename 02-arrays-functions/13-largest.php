@@ -13,7 +13,6 @@ function largest($array){
         if ($number > $bigNum) {
             $bigNum = $number;
         }        
-
     }
 
     return $bigNum;
