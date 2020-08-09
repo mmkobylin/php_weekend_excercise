@@ -1,3 +1,10 @@
+<?php
+
+require __DIR__ . "/vendor/autoload.php";
+
+class Wombat 
+
+
 
 $tish = new Wombat("Tish");
 $fonny = new Wombat("Fonny");
@@ -5,8 +12,8 @@ $fonny = new Wombat("Fonny");
 $tishName = $tish->getName();
 dump($tishName); // "Tish"
 
-// $greeting = $tish->sayHelloTo($fonny);
-// dump($greeting); // "Hello Fonny"
+$greeting = $tish->sayHelloTo($fonny);
+dd($greeting); // "Hello Fonny"
 
 $tish->giveHug();
 dump($tish->howManyHugs()); // 1
