@@ -1,11 +1,12 @@
-<?php
+<?php 
 
 namespace App;
 
-class Hello 
-{
-    public function hello($name)
+class Hello {
+
+    public function hello(string $name) : string
     {
         return "Hello {$name}";
     }
+
 }

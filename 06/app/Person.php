@@ -1,26 +1,27 @@
-<?php
+<?php 
 
 namespace App;
 
-class Person 
-{
-    private $first; 
-    private $last; 
+class Person {
 
-    public function __construct(string $first, string $second) 
+    private $firstName;
+    private $lastName; 
+    
+    public function __construct($firstName, $lastName)
     {
-        $this->first = $first; 
-        $this->second = $second;
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
     }
 
-    public function fullName() 
+    public function fullName() : string
     {
-       
-        return "{$this->first} {$this->second}";
+        return "{$this->firstName} {$this->lastName}";
     }
 
-    public function sayHelloTo($person)
+    public function sayHelloTo($person) : string
+
     {
-        return "Hello {$person->fullName()}";
+        return "Hello {$person->fullname()}";
     }
+
 }

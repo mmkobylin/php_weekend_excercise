@@ -20,12 +20,12 @@ class StringyRedux
         $this->string = strtoupper($this->string);
         return $this;
     }
-    public function append($appendix) : StringyRedux
+    public function append(string $appendix) : StringyRedux
     {
         $this->string .= $appendix;
         return $this;
     }
-    public function repeat($number)
+    public function repeat(float $number) : StringyRedux
     {
             $output = "";
             for ($i = 0; $i <= $number; $i += 1) {
@@ -34,7 +34,7 @@ class StringyRedux
             $this->string = $output;
             return $this;
     }
-    public function get() 
+    public function get() : string
     {
         return $this->string;
     }
