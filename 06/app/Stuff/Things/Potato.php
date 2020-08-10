@@ -1,23 +1,23 @@
 <?php 
 
-namespace App\Stuff\Things; 
+namespace App\Stuff\Things;
 
-class Potato 
+class Potato
 {
-    private $watered = 0;
+    private $waterd = 0;
 
-    public function water() : Potato
+    public function water()
     {
         $this->watered += 1;
         return $this;
     }
-    public function hasGrown() : bool
+
+    public function hasGrown()
     {
-        if ($this->watered < 5){
-        return false;
-        } else {
+        if ($this->watered >= 5) {
             return true;
+        } else {
+            return false;
         }
-    
     }
 }

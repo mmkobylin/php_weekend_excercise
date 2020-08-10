@@ -61,7 +61,7 @@ $book = new Book("Zero: The Biography of a Dangerous Idea", 256);
 
 // read 12 pages
 $book->read(12);
-dump($book->currentPage()); // 13
+dd($book->currentPage()); // 13
 
 // read another 25 pages
 $book->read(25);
